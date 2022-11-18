@@ -176,10 +176,10 @@ function createCard(mystery) {
 
     console.log(section);
     if (count > 0) {
-        section.removeChild(section.firstElementChild);
-        section.removeChild(section.firstElementChild);
-        section.removeChild(section.firstElementChild);
-        section.removeChild(section.firstElementChild);
+        section.removeChild(section.lastElementChild);
+        section.removeChild(section.lastElementChild);
+        section.removeChild(section.lastElementChild);
+        section.removeChild(section.lastElementChild);
     }
 
     section.appendChild(mysterySentP);
