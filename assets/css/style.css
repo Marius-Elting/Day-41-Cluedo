@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#section1 {
+    width: 500px;
+    display: grid;
+    grid-template-areas:
+        "button button"
+        "sent sent"
+        "susCard weaponCard"
+        "susCard roomCard";
+    gap: 50px;
+    place-items: center center;
+}
+
+button {
+    /* width: 100%; */
+    padding: 20px 40px;
+    grid-area: button;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border-image-slice: 3% 3% 3% 3%;
+    border-image-width:
+        1em 1em 1em 1em;
+    border-image-outset:
+        0px 0px 0px 0px;
+    border-image-repeat:
+        round round;
+    border-image-source: url("../img/pngegg\ \(1\).png");
+    transition: 0.5s;
+
+
+}
+
+button:hover {
+    border-radius: 10px;
+    border-image-slice: 5% 5% 5% 5%;
+    border-image-width:
+        1em 1em 1em 1em;
+    border-image-outset:
+        0px 0px 0px 0px;
+    border-image-repeat:
+        round round;
+    border-image-source: url("../img/pngegg\ \(1\).png");
+    transition: 0.5s;
+}
+
+.susCard {
+    grid-area: susCard;
+    height: 500px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+    border: 5px solid antiquewhite;
+    padding: 30px;
+    border-image-slice:
+        11% 9% 11% 8%;
+    border-image-width:
+        1.5em 1.5em 1.5em 1.5em;
+    border-image-outset:
+        0px 0px 0px 0px;
+    border-image-repeat:
+        round round;
+    border-image-source: url("../img/pngegg\ \(1\).png");
+}
+
+.susName {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: antiquewhite;
+}
+
+.susPic {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.susDesc {
+    height: 100px;
+    padding: 5px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+
+.roomCard,
+.weaponCard {
+    height: 50px;
+    width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+    border: 5px solid antiquewhite;
+    padding: 30px;
+    border-image-slice:
+        11% 9% 11% 8%;
+    border-image-width:
+        1.5em 1.5em 1.5em 1.5em;
+    border-image-outset:
+        0px 0px 0px 0px;
+    border-image-repeat:
+        round round;
+    border-image-source: url("../img/pngegg\ \(1\).png");
+}
+
+.roomCard {
+    grid-area:
+        roomCard
+}
+
+.weaponCard {
+    grid-area:
+        weaponCard
+}
+
+.sent {
+    grid-area:
+        sent
+}
