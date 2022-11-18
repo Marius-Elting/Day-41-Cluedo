@@ -59,7 +59,7 @@ button:hover {
 
 .susCard {
     grid-area: susCard;
-    height: 500px;
+    height: 550px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ button:hover {
     gap: 20px;
     background-color: darkgoldenrod;
     border-radius: 10px;
-    border: 5px solid antiquewhite;
+    border: 5px solid transparent;
     padding: 30px;
     border-image-slice:
         11% 9% 11% 8%;
